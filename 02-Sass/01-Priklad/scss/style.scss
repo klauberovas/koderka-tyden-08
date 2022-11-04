@@ -1,0 +1,79 @@
+$c-primary: #ff4400;
+$c-danger: #ff0000;
+$c-success: #00bb88;
+$c-info: #00aaff ;
+
+$font-base: "Helvetica Neue" , Helvetica, Arial, sans-serif;
+$font-special: "Georgie", serif ;
+$spacer: 30px;
+
+
+
+body {
+    font-family: $font-base;
+}
+
+.header {
+    border: 5px solid $c-primary;
+    padding: $spacer;
+    margin-bottom: $spacer;
+
+&__title {
+    color: $c-primary;
+    font-family: $font-special;
+    margin: 0;
+}
+
+&__link {
+    background-color: $c-primary;
+    color: white;
+    padding: $spacer;
+    display: block;
+
+    &:hover {
+        background-color: blue;
+    }
+}
+
+&__menu {
+    list-style: none;
+    padding: 0;
+}
+}
+
+/*a {
+    color: orange;
+
+    &:hover,
+    &:focus {
+    background-color: orange;
+    color: white;
+
+    &:active {
+        background-color: blue;
+    }
+}
+}
+*/
+button {
+    background-color: $c-primary;
+    color: white;
+    font-family: $font-special;
+    padding: $spacer / 2;
+}
+
+footer {
+    margin-top: $spacer;
+    padding: $spacer / 2;
+    color: white;
+    background-color: black;
+
+  @media screen and (min-width: 700px) {
+   background-color: blue;
+        }
+
+  @media screen and (min-width: 900px) {
+   background-color: greenyellow;
+       }
+}
+
