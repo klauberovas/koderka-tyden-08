@@ -29,3 +29,40 @@ body {
 .raketka1 { top: 150px; }
 .raketka2 { top: 330px; }
 .raketka3 { top: 510px; }
+/* můj kod */
+
+/* @keyframes zavod {
+	 0% { transform: translate(0);}
+	 100% {transform: translateX(845px);}
+}
+
+.raketka1 {
+	animation: zavod 10s both;
+}
+
+.raketka2 {
+	animation: zavod 3s 1s both;
+}
+
+.raketka3 {
+	animation: zavod 6s both;
+} */
+
+@keyframes zavod {
+	0% {transform: translateX(0) rotate(0);}
+	40% {transform: translateX(845px)rotate(0);}
+	60% {transform: translateX(845px)rotate(180deg);}
+	100% {transform: translateX(0)rotate(180deg);}
+}
+
+.raketka1 {
+	animation: zavod 12s both;
+}
+
+.raketka2 {
+	animation: zavod 6s 1s both;
+}
+
+.raketka3 {
+	animation: zavod 8s both;
+}
