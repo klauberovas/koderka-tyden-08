@@ -19,7 +19,7 @@ h2 {
 .posun		{ background-color: #2ecc71;}
 .rotace 	{ background-color: #e74c3c;}
 .zvetseni	{ background-color: #3498db;}
-.zkoseni 	{background-color: #060c10;}
+.zkoseni 	{background-color: #225374;}
 
 /* ----------------------- */
 
@@ -44,5 +44,5 @@ h2 {
 }
 
 .zkoseni:hover {
-	transform: skewY(30deg);
+	transform: skew(30deg, 15deg);
 }

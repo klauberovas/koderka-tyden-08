@@ -47,3 +47,28 @@ animation-fill-mode:
 	backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
 	both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
 */
+
+@keyframes pohyb {
+0%	 {
+	transform:translate(0,150px);
+	background-color: blue;
+}
+
+60% {
+	transform: translate(100px,0);
+	border-radius: 0;
+	background-color: orange;
+	}
+
+100% {
+	transform: translate(100px, 300px);
+	background-color: lime;
+	border-radius: 50%;
+}
+}
+
+.kolecko {
+	animation: pohyb 3s ;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
