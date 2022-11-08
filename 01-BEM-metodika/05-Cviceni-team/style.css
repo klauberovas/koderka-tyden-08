@@ -7,4 +7,71 @@ body {
 }
 
 /* ------------------------------------------------ */
+:root {
+	--c-background: #F0FFFF ;
+	--c-primary: #00bff0 ;
+	--f-title: 32px;
+}
 
+.team {
+	background-color: var(--c-background);
+	color: var(--c-primary);
+	width: 100%;
+	height: 100%;
+	padding: 70px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 50px;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.flex--background-blue {
+	background-color: var(--c-primary);
+	color: white;
+	padding: 10px;
+}
+
+.flex__item-image {
+	background-color: white;
+	padding: 20px;
+	color: var(--c-primary);
+	border: 1px solid var(--c-primary);
+}
+
+.team__title {
+	font-size: 32px;
+	margin: 0;
+}
+
+.team__job {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.team__text {
+	margin: 0;
+}
+
+.flex-icons {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+
+ }
+
+.flex-icons__item{
+	color: var(--c-primary) ;
+	
+}
+
+.flex-icons__item--white {
+	color: white;
+ }
+ 
